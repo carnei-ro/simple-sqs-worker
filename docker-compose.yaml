@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  sqs:
+    image: softwaremill/elasticmq-native
+    ports:
+      - "9324:9324"
+      - "9325:9325"
+    volumes:
+      - ./.elasticmq.conf:/opt/elasticmq.conf
+  worker:
+    build: .
+    ports:
+      - "8081:8081"
+    environment:
+      - PROFILE=local

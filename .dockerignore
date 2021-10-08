@@ -1,0 +1,7 @@
+.[a-zA-Z]*
+**/__pycache__
+docker-compose.yml
+Dockerfile
+Makefile
+README.md
+venv

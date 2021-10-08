@@ -1,0 +1,6 @@
+---
+trustedRegistries:
+  - docker.io
+
+ignored:
+  - "DL3018"
